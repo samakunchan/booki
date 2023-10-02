@@ -78,7 +78,7 @@ a {
     width: 65%;
 }
 
-.hebergements-title, .activites-title {
+.hebergements-title {
     margin-left: 18px;
 }
 
@@ -157,6 +157,44 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+
+/****** Activités ***********/
+.section-activites{
+    margin: 33px 0;
+}
+
+.activites-title {
+    margin: 33px 20px;
+}
+
+.activites {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.activites .card {
+    padding: 0;
+    width: 18em;
+}
+
+
+.activites .card .card-image img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 300px;
+}
+
+.activites .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 
