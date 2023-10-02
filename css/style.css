@@ -197,7 +197,20 @@ a {
     box-sizing: border-box;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--main-bg-color);
+}
 
+footer ul li{
+    list-style: none;
+    line-height: 2em;
+}
+
+footer ul li:first-child{
+    font-weight: bold;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
