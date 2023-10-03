@@ -9,13 +9,19 @@
     --filter-bg-color: #DEEBFF;
 }
 
+body{
+    margin: 0;
+}
 .fa-solid {
     color: var(--main-color);
 }
 
-body {
-    display: flex;
-    justify-content: center;
+.main-content-size {
+    width: 65%;
+}
+
+.aside-content-size {
+    width: 32%;
 }
 
 .main-container {
@@ -33,6 +39,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
 }
 
 .card {
@@ -58,11 +65,162 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+.bold {
+    font-weight: bold;
+}
+
+.d-flex {
     display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
     justify-content: space-between;
 }
+
+.align-center {
+    align-items: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+/****** Header ***********/
+header {
+    margin-bottom: 30px;
+}
+
+header nav img {
+    width: 100px;
+    object-fit: contain;
+}
+
+header ul {
+    width: 15em;
+    margin: 0;
+
+}
+
+header ul li {
+    list-style: none;
+    border-top: solid transparent;
+    padding: 16px 12px;
+}
+
+header ul li:hover {
+    border-top: solid var(--main-color);
+}
+
+/****** Search ***********/
+.marker{
+    background-color: var(--main-bg-color);
+    padding: 22px;
+}
+
+.fa-map-marker-alt {
+    color: black;
+    font-size: 25px;
+    margin: auto;
+}
+
+form {
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form input {
+    width: 15em;
+    height: 48px;
+    border: 0;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+    padding: 0 10px 0 10px;
+    font: 700 14px 'Raleway';
+}
+
+form input:focus-visible {
+    outline: none;
+}
+
+form .btn-search {
+    height: 100%;
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+    border: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font: 700 14px 'Raleway';
+    width: 120px;
+    cursor: pointer;
+}
+
+/****** Filters ***********/
+.filters div {
+    margin: 22px 0;
+}
+
+.filter-radio label {
+    margin: 0 5px;
+}
+
+.filter-radio label span {
+    margin: 0 8px;
+}
+
+input[type="radio"].btn-radio {
+    display: none;
+}
+
+input[type="radio"].btn-radio + label {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+input[type="radio"].btn-radio:hover + label,
+input[type="radio"].btn-radio:checked + label {
+    background-color: var(--filter-bg-color);
+}
+
+.icon-info {
+    border: solid 1px grey;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
+.icon-info i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+
+.text-info {
+    margin-left: 15px;
+}
+
+/****** Hebergements And Populaires ***********/
 
 .hebergements-and-populaires section,
 .hebergements-and-populaires aside {
@@ -82,14 +240,9 @@ a {
     margin-left: 18px;
 }
 
-.section-footer {
+.section-title-footer {
     margin-top: 33px;
-}
-
-.hebergements-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    font-size: 18px;
 }
 
 .hebergements-cards .card {
@@ -115,15 +268,6 @@ a {
 }
 
 /****** Populaires ***********/
-.populaires {
-    width: 32%;
-}
-
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .populaires-cards .card {
     display: flex;
@@ -161,7 +305,7 @@ a {
 
 
 /****** Activités ***********/
-.section-activites{
+.section-activites {
     margin: 33px 0;
 }
 
@@ -169,17 +313,10 @@ a {
     margin: 33px 20px;
 }
 
-.activites {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .activites .card {
     padding: 0;
     width: 18em;
 }
-
 
 .activites .card .card-image img {
     width: 100%;
@@ -208,7 +345,7 @@ footer ul li{
     line-height: 2em;
 }
 
-footer ul li:first-child{
+footer ul li:first-child {
     font-weight: bold;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -224,7 +361,7 @@ footer ul li:first-child{
         width: 100%;
     }
 
-    .populaires {
+    .aside-content-size {
         width: 100%;
         margin-top: 50px;
     }

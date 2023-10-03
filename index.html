@@ -8,23 +8,106 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-  <body>
+  <body class="d-flex justify-center">
     <div class="main-container">
-      <header></header>
+      <header>
+        <nav class="d-flex justify-between">
+          <!-- Logo -->
+          <img src="images/logo/booki.png" alt="Logo du site Booki">
+          <!-- End Logo -->
+          
+          <!-- Menu -->
+          <ul class="d-flex justify-between">
+            <li><a href="#hebergementsAndPopulaires">Hébergements</a></li>
+            <li><a href="#sectionActivites">Activités</a></li>
+          </ul>
+          <!-- End Menu -->
+          
+        </nav>
+      </header>
+      
       <main>
+        <!-- Filters -->
+        <section class="filters">
+          <div class="hebergements-title">
+            <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre-ville ou en pleine nature</p>
+          </div>
+          
+          <!-- Search Bar -->
+          <form>
+            <span class="marker">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <label for="searchBar">
+              <input type="text" name="search" id="searchBar" />
+            </label>
+            <button class="btn-search" type="submit">Rechercher</button>
+          </form>
+          <!-- End Search Bar -->
+          
+          <!-- Filter radio -->
+          <div class="filter-radio main-content-size d-flex justify-between align-center flex-wrap">
+            <span class="section-title bold">Filtres</span>
+            
+            <div class="d-flex align-center flex-wrap">
+              <input class="btn-radio" type="radio" name="choice" id="economique">
+              <label class="section-title bold d-flex" for="economique">
+                <i class="fas fa-money-bill-wave fa-solid"></i>
+                <span>Economique</span>
+              </label>
+              
+              <input class="btn-radio" type="radio" name="choice" id="familial">
+              <label class="section-title bold d-flex" for="familial">
+                <i class="fas fa-child fa-solid"></i>
+                <span>Familial</span>
+              </label>
+              
+              <input class="btn-radio" type="radio" name="choice" id="romantique">
+              <label class="section-title bold d-flex" for="romantique">
+                <i class="fas fa-heart fa-solid"></i>
+                <span>Romantique</span>
+              </label>
+              
+              <input class="btn-radio" type="radio" name="choice" id="pepites">
+              <label class="section-title bold d-flex" for="pepites">
+                <i class="fas fa-fire fa-solid"></i>
+                <span>Nos Pepites</span>
+              </label>
+            </div>
+            
+          </div>
+          <!-- End Filter radio -->
+          
+          <!-- Infos -->
+          <div class="d-flex align-center">
+            <span class="icon-info">
+              <i class="fas fa-info fa-solid"></i>
+            </span>
+            <p class="text-info">Plus de 500 logements sont disponibles dans cette ville.</p>
+          </div>
+          <!-- End Infos -->
+          
+        </section>
+        <!-- End Filters -->
+        
         <!-- Hébergements et populaires -->
-        <section class="hebergements-and-populaires">
+        <section id="hebergementsAndPopulaires" class="hebergements-and-populaires d-flex justify-between">
           <!-- Hébergements -->
-          <section class="hebergements">
-            <div class="hebergements-title">
+          <section class="main-content-size">
+            <!-- Hébergements title -->
+            <div class="d-flex justify-between align-center">
               <h2 class="section-title">Hébergement à Marseille</h2>
             </div>
-            <div class="hebergements-cards">
+            <!-- End Hébergements title -->
+            <div class="hebergements-cards d-flex flex-wrap justify-around">
               <!-- Card Hotel du port -->
               <a href="javascript:void(0)">
                 <article class="card">
@@ -170,14 +253,14 @@
               <!-- End Hôtel Les mouettes -->
             </div>
             <div class="hebergements-title">
-              <h2 class="section-title section-footer">Afficher plus</h2>
+              <h2 class="section-title-footer">Afficher plus</h2>
             </div>
           </section>
           <!-- End Hébergements -->
           
           <!-- Populaires -->
-          <aside class="populaires">
-            <div class="populaires-title">
+          <aside class="populaires aside-content-size">
+            <div class="populaires-title d-flex justify-between align-center">
               <h2 class="section-title">Les plus populaires</h2>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
@@ -246,11 +329,11 @@
         <!-- End Hébergements et populaires -->
         
         <!-- Activités -->
-        <section class="section-activites">
+        <section id="sectionActivites" class="section-activites">
           <div class="activites-title">
             <h2 class="section-title">Activités à Marseille</h2>
           </div>
-          <div class="activites">
+          <div class="activites d-flex flex-wrap justify-around">
             
             <!-- Vieux Port -->
             <a href="javascript:void(0)">
@@ -315,6 +398,7 @@
         </section>
         <!-- Fin Activités -->
       </main>
+      
       <footer>
         <ul>
           <li>A propos</li>
