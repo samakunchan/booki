@@ -463,6 +463,11 @@ footer ul li:first-child {
 
     .fa-search {
         display: block;
+        font-size: 25px;
+    }
+
+    .search-txt-btn{
+        display: none;
     }
 
     .filters,
