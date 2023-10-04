@@ -185,25 +185,21 @@ form .btn-search, form .btn-search-mobile {
     cursor: pointer;
 }
 
-.btn-search {
-    display: block;
-}
-
-.btn-search-mobile {
+.fa-search {
     display: none;
 }
 
 /****** Filters ***********/
+.filter-radio {
+    gap: 15px;
+}
+
 .filters div {
     margin: 22px 0;
 }
 
 .filter-radio label {
     margin: 0 5px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    display: inline-block;
 }
 
 .filter-radio label span {
@@ -465,11 +461,7 @@ footer ul li:first-child {
         width: 100%;
     }
 
-    .btn-search {
-        display: none;
-    }
-
-    .btn-search-mobile {
+    .fa-search {
         display: block;
     }
 
