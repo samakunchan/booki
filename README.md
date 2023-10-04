@@ -6,7 +6,7 @@ Projet 2 Openclassrooms. <br>
 Site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
 1. [Scenario](./SCENARIO.md)
-1. [Livrables](./LIVRABLES.md)
+1. [Livrables](./DELIVARABLES.md)
 
 ## Installation
 
