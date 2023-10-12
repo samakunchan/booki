@@ -19,15 +19,15 @@
   <body class="d-flex justify-center">
     <div class="main-container">
       <!-- Header -->
-      <header>
+      <header aria-label="Entête du site">
         <h1>Booki</h1>
-        <nav class="navbar d-flex justify-between">
+        <nav class="navbar d-flex justify-between" aria-label="navigation">
           <!-- Logo -->
           <img src="images/logo/booki.png" alt="Logo du site Booki">
           <!-- End Logo -->
           
           <!-- Menu -->
-          <ul class="menus d-flex justify-between">
+          <ul class="menus d-flex justify-between" aria-label="menus">
             <li><a href="#hebergementsAndPopulaires">Hébergements</a></li>
             <li><a href="#sectionActivites">Activités</a></li>
           </ul>
@@ -37,9 +37,9 @@
       </header>
       <!-- End Header -->
       
-      <main>
+      <main aria-label="Contenu principale du site">
         <!-- Filters -->
-        <section class="filters">
+        <section class="filters" aria-label="Zone de selection de la ville et les filtres">
           <!-- Filter title -->
           <div class="filters-title">
             <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
@@ -48,7 +48,7 @@
           <!-- End Filter title -->
           
           <!-- Search Bar -->
-          <form>
+          <form class="form-search" aria-label="Formulaire de recherche par ville">
             <span class="marker">
               <i class="fas fa-map-marker-alt"></i>
             </span>
@@ -61,32 +61,36 @@
           
           <!-- Filter radio -->
           <div class="filter-radio d-flex align-center flex-wrap">
-            <span class="section-title bold">Filtres</span>
-
+            <h4 id="filters" class="section-title bold" aria-label="Filtrer par">Filtres</h4>
             <div class="filter-radio-btn d-flex align-center">
-              <input class="btn-radio" type="radio" name="choice" id="economique">
-              <label class="bold d-flex align-center" for="economique">
-                <i class="fas fa-money-bill-wave fa-solid"></i>
-                <span>Economique</span>
-              </label>
-              
-              <input class="btn-radio" type="radio" name="choice" id="familial">
-              <label class="bold d-flex align-center" for="familial">
-                <i class="fas fa-child fa-solid"></i>
-                <span>Familial</span>
-              </label>
-              
-              <input class="btn-radio" type="radio" name="choice" id="romantique">
-              <label class="bold d-flex align-center" for="romantique">
-                <i class="fas fa-heart fa-solid"></i>
-                <span>Romantique</span>
-              </label>
-              
-              <input class="btn-radio" type="radio" name="choice" id="pepites">
-              <label class="bold d-flex align-center" for="pepites">
-                <i class="fas fa-fire fa-solid"></i>
-                <span>Nos Pépites</span>
-              </label>
+              <div class="position-relative">
+                <input class="btn-radio" type="radio" name="choice" id="economique" aria-label="hébergement economique">
+                <label class="bold d-flex align-center" for="economique" aria-labelledby="filters economique" id="economique1">
+                  <i class="fas fa-money-bill-wave fa-solid"></i>
+                  <span>Economique</span>
+                </label>
+              </div>
+              <div class="position-relative">
+                <input class="btn-radio" type="radio" name="choice" id="familial" aria-label="hébergement familial">
+                <label class="bold d-flex align-center" for="familial" aria-labelledby="filters familial" id="familial1">
+                  <i class="fas fa-child fa-solid"></i>
+                  <span>Familial</span>
+                </label>
+              </div>
+              <div class="position-relative">
+                <input class="btn-radio" type="radio" name="choice" id="romantique" aria-label="hébergement romantique">
+                <label class="bold d-flex align-center" for="romantique" aria-labelledby="filters romantique" id="romantique1">
+                  <i class="fas fa-heart fa-solid"></i>
+                  <span>Romantique</span>
+                </label>
+              </div>
+              <div class="position-relative">
+                <input class="btn-radio" type="radio" name="choice" id="pepites" aria-label="hébergement pepites">
+                <label class="bold d-flex align-center" for="pepites" aria-labelledby="filters pepites" id="pepites1">
+                  <i class="fas fa-fire fa-solid"></i>
+                  <span>Nos Pépites</span>
+                </label>
+              </div>
             </div>
             
           </div>
@@ -105,9 +109,9 @@
         <!-- End Filters -->
         
         <!-- Hébergements et populaires -->
-        <div class="hebergements-and-populaires d-flex justify-between">
+        <div class="hebergements-and-populaires d-flex justify-between" aria-label="Résultats des hébergements trouvés">
           <!-- Hébergements -->
-          <section id="hebergementsAndPopulaires" class="main-content-size">
+          <section id="hebergementsAndPopulaires" class="main-content-size" aria-label="Hébergement à Marseille">
             <!-- Hébergements title -->
             <div class="d-flex justify-between align-center">
               <h2 class="section-title">Hébergement à Marseille</h2>
@@ -115,7 +119,7 @@
             <!-- End Hébergements title -->
             <div class="hebergements-cards d-flex flex-wrap justify-around">
               <!-- Card Hotel du port -->
-              <a href="#">
+              <a href="#" aria-label="Voir l'Hôtel du port">
                 <article class="card">
                   <div class="card-image">
                     <img src="images/hebergements/chambre-argentin.jpg" alt="Chambre d'hôtel avec 2 lits style argentin">
@@ -139,7 +143,7 @@
               <!-- End Carte Hotel du port -->
               
               <!-- Card Hotel Chez Amina -->
-              <a href="#">
+              <a href="#" aria-label="Voir l'Hôtel Chez Amina">
                 <article class="card">
                   <div class="card-image">
                     <img src="images/hebergements/chambre-double-bureau.jpg" alt="Chambre d'hôtel avec 2 lits et un bureau">
@@ -163,7 +167,7 @@
               <!-- End Card Hotel Chez Amina -->
               
               <!-- Hôtel Les mouettes -->
-              <a href="#">
+              <a href="#" aria-label="Voir l'Hôtel Les mouettes">
                 <article class="card">
                   <div class="card-image">
                     <img src="images/hebergements/chambre-coszy.jpg" alt="Chambre d'hôtel avec 2 lits côte-a-côte cozy">
@@ -187,7 +191,7 @@
               <!-- End Hôtel Les mouettes -->
               
               <!-- Card Hotel de la mer -->
-              <a href="#">
+              <a href="#" aria-label="Voir l'Hôtel de la mer">
                 <article class="card">
                   <div class="card-image">
                     <img src="images/hebergements/chambre-marin.jpg" alt="Chambre d'hôtel avec un grand lit dans un univers marin">
@@ -211,7 +215,7 @@
               <!-- End Carte Hotel du port -->
               
               <!-- Card Auberge La Canebière -->
-              <a href="#">
+              <a href="#" aria-label="Voir l'Auberge La Canebière">
                 <article class="card">
                   <div class="card-image">
                     <img src="images/hebergements/auberge-lit-superposer.jpg" alt="Chambre d'auberge avec un lit superposer avec vue sur la route">
@@ -235,7 +239,7 @@
               <!-- End Card Hotel Chez Amina -->
               
               <!-- Hôtel Auberge Le Panier -->
-              <a href="#">
+              <a href="#" aria-label="Voir l'Auberge Le Panier">
                 <article class="card">
                   <div class="card-image">
                     <img src="images/hebergements/auberge-mulit-lits-supersposer.jpg" alt="Chambre d'auberge avec plusieurs lits">
@@ -266,7 +270,7 @@
           <!-- End Hébergements -->
           
           <!-- Populaires -->
-          <aside class="populaires aside-content-size">
+          <aside class="populaires aside-content-size" aria-label="Les plus populaires">
             <!-- Populaires - Title -->
             <div class="populaires-title d-flex justify-between align-center">
               <h2 class="section-title">Les plus populaires</h2>
@@ -277,7 +281,7 @@
             <div class="populaires-cards">
               
               <!-- Hôtel Le soleil du matin -->
-              <a href="#">
+              <a href="#" aria-label="Voir l'Hôtel Le soleil du matin">
                 <article class="card">
                   <img src="images/hebergements/chambre-verte.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                   <div class="card-content">
@@ -299,7 +303,7 @@
               <!-- End Hôtel Le soleil du matin -->
               
               <!-- Chambres d’hôtes Au cœur de l’eau -->
-              <a href="#">
+              <a href="#" aria-label="Voir les Chambres d’hôtes Au cœur de l’eau">
                 <article class="card">
                   <img src="images/hebergements/chambre-duplex.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                   <div class="card-content">
@@ -321,7 +325,7 @@
               <!-- End Chambres d’hôtes Au cœur de l’eau -->
               
               <!-- Hôtel Bleu et Blanc -->
-              <a href="#">
+              <a href="#" aria-label="Voir l'Hôtel Bleu et Blanc">
                 <article class="card">
                   <img src="images/hebergements/chambre-simple-grand-lit.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                   <div class="card-content">
@@ -349,14 +353,14 @@
         <!-- End Hébergements et populaires -->
         
         <!-- Activités -->
-        <section id="sectionActivites" class="section-activites">
+        <section id="sectionActivites" class="section-activites" aria-label="Activités à Marseille">
           <div class="activites-title">
             <h2 class="section-title">Activités à Marseille</h2>
           </div>
           <div class="activites d-flex flex-wrap justify-around">
             
             <!-- Vieux Port -->
-            <a href="#">
+            <a href="#" aria-label="Voir les activités sur les Vieux-port">
               <article class="card">
                 <div class="card-image">
                   <img src="images/activites/vieux-port.jpg" alt="Image du vieux port">
@@ -371,7 +375,7 @@
             <!-- End Vieux Port -->
             
             <!-- Fort de Pomègues -->
-            <a href="#">
+            <a href="#" aria-label="Voir les activités au Fort de Pomègues">
               <article class="card">
                 <div class="card-image">
                   <img src="images/activites/fort-de-pomegues.jpg" alt="Image de Fort de Pomègues">
@@ -386,7 +390,7 @@
             <!-- End Fort de Pomègues -->
             
             <!-- Parc national des calanques -->
-            <a href="#">
+            <a href="#" aria-label="Voir les activités au Parc national des calanques">
               <article class="card">
                 <div class="card-image">
                   <img src="images/activites/les-calanques.jpg" alt="Image du parc national des calanques">
@@ -401,7 +405,7 @@
             <!-- End Parc national des calanques -->
            
             <!-- Notre-Dame-de-la-Garde -->
-            <a href="#">
+            <a href="#" aria-label="Voir les activités à Notre-Dame-de-la-Garde">
               <article class="card">
                 <div class="card-image">
                   <img src="images/activites/notre-dame-de-la-garde.jpg" alt="Image de Notre-Dame-de-la-Garde">
@@ -420,19 +424,19 @@
       </main>
       
       <!-- Footer -->
-      <footer>
-        <ul>
+      <footer aria-label="Pied de page">
+        <ul aria-label="A propos">
           <li>A propos</li>
           <li>Fonctionnement du site</li>
           <li>Conditions générales</li>
           <li>Données et confidentialité</li>
         </ul>
-        <ul>
+        <ul aria-label="Nos hébergements">
           <li>Nos hébergements</li>
           <li>Charte qualité</li>
           <li>Proposer votre hôtel</li>
         </ul>
-        <ul>
+        <ul aria-label="Assistance">
           <li>Assistance</li>
           <li>Centre d'aide</li>
           <li>Nous contacter</li>

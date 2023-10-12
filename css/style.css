@@ -100,6 +100,10 @@ a {
     flex-wrap: wrap;
 }
 
+.position-relative {
+    position: relative;
+}
+
 h1 {
     position: absolute;
     visibility: hidden;
@@ -207,7 +211,11 @@ form .btn-search, form .btn-search-mobile {
 }
 
 input[type="radio"].btn-radio {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: -1;
 }
 
 input[type="radio"].btn-radio + label {
@@ -215,9 +223,11 @@ input[type="radio"].btn-radio + label {
     border: 2px solid #ccc;
     border-radius: 25px;
     margin-bottom: 8px;
+    background-color: white;
 }
 
 input[type="radio"].btn-radio:hover + label,
+input[type="radio"].btn-radio:focus + label,
 input[type="radio"].btn-radio:checked + label {
     background-color: var(--filter-bg-color);
 }
