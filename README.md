@@ -1,5 +1,6 @@
 [![](https://img.shields.io/badge/Plateform-Openclassroom-7451eb)](https://openclassrooms.com)
 [![](https://img.shields.io/badge/Projet-Projet_2-blue)]()
+[![](https://img.shields.io/badge/View_projet-Click_here-darkGreen)](https://samakunchan.github.io/booki/)
 # BOOKI
 
 Projet 2 Openclassrooms. <br>
