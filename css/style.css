@@ -528,6 +528,9 @@ footer ul li:first-child {
     .filters, .section-activites {
         padding: 0 20px;
     }
+}
+
+@media (max-width: 321px) {
     input[type="radio"].btn-radio + label {
         padding: 0.6rem 0.5rem;
         max-width: 7.5em;
