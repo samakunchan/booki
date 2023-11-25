@@ -385,6 +385,11 @@ footer ul li:first-child {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1280px) {
+    .activites .card {
+        width: 15em;
+    }
+}
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
